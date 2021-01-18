@@ -7,6 +7,14 @@ html, body {
 	padding: 0;
 }
 
+.language {
+	margin: 0.2em;
+	margin-top: 0.25em;
+	padding: 0.1em;
+	border: 0.15em solid;
+	border-radius: 9px;
+}
+
 #home {
 	background-image: url('img/home.jpg');
 	background-attachment: fixed;
