@@ -7,12 +7,21 @@ html, body {
 	padding: 0;
 }
 
+.github {
+	width: 100%;
+}
+
 .language {
 	margin: 0.2em;
 	margin-top: 0.25em;
 	padding: 0.1em;
 	border: 0.15em solid;
 	border-radius: 9px;
+}
+
+.w3-quarter {
+	margin-left: 5em;
+	margin-right: 5em;
 }
 
 #home {

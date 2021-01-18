@@ -12,10 +12,10 @@
 	<body>
 
 		<nav class="w3-bar w3-mobile w3-black w3-opacity-min">
-			<a href="#" class="w3-bar-item w3-button">Home</a>
-			<a href="#" class="w3-bar-item w3-button">About</a>
-			<a href="#" class="w3-bar-item w3-button">Projects</a>
-			<a href="#" class="w3-bar-item w3-button">Contact</a>
+			<a href="#home" class="w3-bar-item w3-button">Home</a>
+			<a href="#about" class="w3-bar-item w3-button">About</a>
+			<a href="#projects" class="w3-bar-item w3-button">Projects</a>
+			<a href="#contact" class="w3-bar-item w3-button">Contact</a>
 	 	</nav>
 
 	  	<section class="w3-container" id="home">
@@ -26,8 +26,7 @@
 		<section class="w3-container" id="about">
 	  		<div class="w3-content" style="max-width:800px">
 				<h2 class="w3-container w3-center w3-xxlarge w3-text-dark-gray">About Me</h2>
-				<p class="w3-text-dark-gray">I'm a 2nd year computer engineering student at SFU.
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc gravida vitae quam eu ullamcorper. In in dolor ex. Duis eget molestie nisi. Fusce ut nulla lorem. Cras arcu sem, facilisis ac condimentum eget, volutpat a nibh. Cras interdum lacus arcu. Nunc iaculis quam sit amet diam luctus, quis porttitor ante ultrices. Proin dapibus lacinia quam ac cursus. Duis interdum est id leo tristique, non posuere orci aliquam. Sed commodo nibh suscipit pharetra placerat. Suspendisse mauris erat, dictum ut consectetur quis, varius sagittis orci. Integer diam dui, iaculis non magna eu, sodales laoreet nulla. Quisque sed nisl nisi. Praesent feugiat tristique.</p>
+				<p class="w3-text-dark-gray w3-large">Hello! I'm a second year computer engineering student at SFU.</p>
 			</div>
 		</section>
 
@@ -36,47 +35,56 @@
 				<h2 class="w3-container w3-center w3-xxlarge w3-text-dark-gray">My Projects</h2>
 			</div>
 			<div class="w3-row-padding">
-				<div class="w3-third">
+				<div class="w3-quarter">
 					<div class="w3-card w3-display-container">
 						<h3 class="w3-panel w3-center w3-blue-gray">CPU Simulator</h3>
-						<p class="w3-container">I did something and it was cool.</p>
+						<p class="w3-container">CPU Simulator does exactly what the name implies: simulates a computer processor. The program takes an input of a series of numbers (given as a csv),
+							which it translates into binary. These binary numbers are all parsed as instructions by an ISA (instruction set architecture), then executed by the program. Through the
+							use of the preprocessor, it's possible to change how many instructions are fetched, executed, and removed from the queue each 'clock cycle.''
+						</p>
+						<a href="https://www.github.com/asd1o1/cpu-simulator" class="github w3-button w3-light-gray w3-center w3-large" target="_blank">See it on GitHub</a>
 						<p class="language w3-display-topleft w3-light-gray">C++</p>
 					</div>
 				</div>
-				<div class="w3-third">
+				<div class="w3-quarter">
 					<div class="w3-card w3-display-container">
 						<h3 class="w3-panel w3-center w3-blue-gray">Vending Machine</h3>
 						<p class="w3-container">I did something and it was cool.</p>
+						<a href="https://www.github.com/asd1o1/vending-machine" class="github w3-button w3-light-gray w3-center w3-large" target="_blank">See it on GitHub</a>
 						<p class="language w3-display-topleft w3-light-gray">VHDL</p>
 					</div>
 				</div>
-				<div class="w3-third">
+				<div class="w3-quarter">
 					<div class="w3-card w3-display-container">
 						<h3 class="w3-panel w3-center w3-blue-gray">Star Trek Episodes</h3>
 						<p class="w3-container">I did something and it was cool.</p>
+						<a href="https://www.github.com/asd1o1/star-trek-episodes" class="github w3-button w3-light-gray w3-center w3-large" target="_blank">See it on GitHub</a>
 						<p class="language w3-display-topleft w3-light-gray">HTML</p>
 					</div>
 				</div>
 			</div>
 			<div class="w3-row-padding">
-				<div class="w3-third">
+				<div class="w3-quarter">
 					<div class="w3-card w3-display-container">
 						<h3 class="w3-panel w3-center w3-blue-gray">Chirper</h3>
 						<p class="w3-container">I did something and it was cool.</p>
+						<a href="https://www.github.com/asd1o1/chirper" class="github w3-button w3-light-gray w3-center w3-large" target="_blank">See it on GitHub</a>
 						<p class="language w3-display-topleft w3-light-gray">C++</p>
 					</div>
 				</div>
-				<div class="w3-third">
+				<div class="w3-quarter">
 					<div class="w3-card w3-display-container">
 						<h3 class="w3-panel w3-center w3-blue-gray">Cycle Vest</h3>
 						<p class="w3-container">I did something and it was cool.</p>
+						<a href="https://www.github.com/asd1o1/cycle-vest" class="github w3-button w3-light-gray w3-center w3-large" target="_blank">See it on GitHub</a>
 						<p class="language w3-display-topleft w3-light-gray">C++</p>
 					</div>
 				</div>
-				<div class="w3-third">
+				<div class="w3-quarter">
 					<div class="w3-card w3-display-container">
 						<h3 class="w3-panel w3-center w3-blue-gray">Translink Buzzer Downloader</h3>
 						<p class="w3-container">I did something and it was cool.</p>
+						<a href="https://www.github.com/asd1o1/get-translink-buzzer" class="github w3-button w3-light-gray w3-center w3-large" target="_blank">See it on GitHub</a>
 						<p class="language w3-display-topleft w3-light-gray">Bash</p>
 					</div>
 				</div>
@@ -84,7 +92,9 @@
 	  	</section>
 
 	  	<section class="w3-container" id="contact">
-			
+			<div class="w3-content" style="max-width:800px">
+				<h2 class="w3-container w3-center w3-xxlarge w3-text-dark-gray">Contact Me</h2>
+			</div>
 	  	</section>
 
 	  	<footer class="w3-bar">
