@@ -7,6 +7,10 @@ html, body {
 	padding: 0;
 }
 
+section {
+	margin-top: 4em;
+}
+
 .github {
 	width: 100%;
 }
@@ -25,6 +29,7 @@ html, body {
 }
 
 #home {
+	margin-top: 0em;
 	background-image: url('img/home.jpg');
 	background-attachment: fixed;
 	background-position: center;
