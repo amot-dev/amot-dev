@@ -8,29 +8,29 @@ html, body {
 }
 
 section {
-	margin-top: 4em;
+	margin-top: 4rem;
 }
 
-.github {
-	width: 100%;
+.title {
+	border-radius: 0 1.5rem 0 0;
 }
 
 .language {
-	margin: 0.2em;
-	margin-top: 0.25em;
-	padding: 0.1em;
-	border: 0.15em solid;
-	border-radius: 9px;
+	border-radius: 1.5rem 0 0 0;
+	box-shadow: 0 0 0 0.2rem black inset;
 }
 
-.w3-quarter {
-	margin-left: 5em;
-	margin-right: 5em;
+.github {
+	border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.w3-card {
+	border-radius: 1.5rem;
 }
 
 #home {
 	margin-top: 0em;
-	background-image: url('img/home.jpg');
+	background-image: url('https://via.placeholder.com/3456x1944');
 	background-attachment: fixed;
 	background-position: center;
 	background-position-y: 0;
