@@ -1,0 +1,46 @@
+{
+"projects": [
+	{
+		"title": "CPU Simulator",
+		"language": "C++",
+		"source": "https://www.github.com/asd1o1/cpu-simulator",
+		"description":
+		"CPU Simulator does exactly what the name implies: simulates a computer processor. The program takes an input of a series of numbers (given as a csv), which it translates into binary. These binary numbers are all parsed as instructions by an ISA (instruction set architecture), then executed by the program. Through the use of the preprocessor, it's possible to change how many instructions are fetched, executed, and removed from the queue each 'clock cycle.'"
+	},
+	{
+		"title": "Vending Machine",
+		"language": "VHDL",
+		"source": "https://www.github.com/asd1o1/cpu-simulator",
+		"description":
+		"Vending Machine is a program intended to run on a physical vending machine to provide all the functions necessary, including setting prices, purchasing products, and even a backdoor to receive products for free :). Without a physical vending machine, the input must be set prior to runtime and the output is in a form of a digital signal graph, but of course, when ran on a physical machine, inputs would be relayed from the PIN pad, and outputs would trigger mechanisms to release a product."
+	},
+	{
+		"title": "Star Trek Episodes",
+		"language": "HTML",
+		"source": "https://www.github.com/asd1o1/cpu-simulator",
+		"description":
+		"This website was a personal project of mine intended to sort through all Star Trek episodes based on various character, planet, and ship appearances (and eventually mood/tone as well). At the moment, it is left as a proof of concept (with TOS and TAS done, and TNG partially done) due to the large amount of Star Trek episodes. Currently, it's possible to select multiple tags to include or not include. These are searchable, or can simply be picked from a list of all tags appearing in the selected show."
+	},
+	{
+		"title": "Chirper",
+		"language": "C++",
+		"source": "https://www.github.com/asd1o1/cpu-simulator",
+		"description":
+		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget nisi nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus lectus enim, et pulvinar eros ultrices et. Vestibulum ac viverra ligula, faucibus tincidunt elit. Integer risus ex, bibendum et leo sed, imperdiet ornare nisi. Suspendisse ut molestie diam. Aenean auctor, ipsum ut blandit hendrerit, est libero rhoncus ipsum, vitae aliquet diam leo sed enim. Aenean laoreet mauris euismod porttitor varius. Ut luctus rutrum metus id laoreet. Aliquam ut interdum tellus, ut rutrum augue. Sed volutpat ut dui in mattis. Fusce accumsan, mi vitae semper sagittis, velit velit lobortis sem, tincidunt semper sem erat a mi."
+	},
+	{
+		"title": "Cycle Vest",
+		"language": "C++",
+		"source": "https://www.github.com/asd1o1/cpu-simulator",
+		"description":
+		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget nisi nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus lectus enim, et pulvinar eros ultrices et. Vestibulum ac viverra ligula, faucibus tincidunt elit. Integer risus ex, bibendum et leo sed, imperdiet ornare nisi. Suspendisse ut molestie diam. Aenean auctor, ipsum ut blandit hendrerit, est libero rhoncus ipsum, vitae aliquet diam leo sed enim. Aenean laoreet mauris euismod porttitor varius. Ut luctus rutrum metus id laoreet. Aliquam ut interdum tellus, ut rutrum augue. Sed volutpat ut dui in mattis. Fusce accumsan, mi vitae semper sagittis, velit velit lobortis sem, tincidunt semper sem erat a mi."
+	},
+	{
+		"title": "Translink Buzzer Downloader",
+		"language": "Bash",
+		"source": "https://www.github.com/asd1o1/cpu-simulator",
+		"description":
+		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget nisi nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus lectus enim, et pulvinar eros ultrices et. Vestibulum ac viverra ligula, faucibus tincidunt elit. Integer risus ex, bibendum et leo sed, imperdiet ornare nisi. Suspendisse ut molestie diam. Aenean auctor, ipsum ut blandit hendrerit, est libero rhoncus ipsum, vitae aliquet diam leo sed enim. Aenean laoreet mauris euismod porttitor varius. Ut luctus rutrum metus id laoreet. Aliquam ut interdum tellus, ut rutrum augue. Sed volutpat ut dui in mattis. Fusce accumsan, mi vitae semper sagittis, velit velit lobortis sem, tincidunt semper sem erat a mi."
+	}
+]
+}
