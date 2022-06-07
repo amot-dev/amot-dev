@@ -1,4 +1,4 @@
-window.onload = function(){
+window.onload = function () {
 	var languages = document.getElementsByClassName("language");
 	for (var i = 0; i < languages.length; i++) {
 		if (languages[i].firstChild.innerText == "C++") languages[i].style.boxShadow = "0 0 0 0.2rem #f34b7d inset";
