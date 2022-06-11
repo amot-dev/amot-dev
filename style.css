@@ -120,7 +120,7 @@ nav, footer {
 	color: #3a3a3a;
 	background-color: #f1f1f1;
 	border-radius: 1.5rem 0 0 0;
-	box-shadow: 0 0 0 0.2rem black inset;
+	box-shadow: 0 0 0 0.2rem #000000 inset;
 	width: 50%;
 	padding-bottom: 99999px;
 	margin-bottom: -99999px;

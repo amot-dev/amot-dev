@@ -11,7 +11,7 @@ function renderProjects(data) {
 function getBorderStyle(language) {
 	if (language == "C++") return {boxShadow: "0 0 0 0.2rem #f34b7d inset"}
 	if (language == "VHDL") return {boxShadow: "0 0 0 0.2rem #adb2cb inset"}
-	if (language == "HTML") return {boxShadow: "0 0 0 0.2rem #e34c26 inset"}
+	if (language == "JS") return {boxShadow: "0 0 0 0.2rem #e34c26 inset"}
 	if (language == "Bash") return {boxShadow: "0 0 0 0.2rem #89e051 inset"}
 }
 
