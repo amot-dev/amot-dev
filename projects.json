@@ -1,46 +1,74 @@
 {
 "projects": [
 	{
+		{
+		"title": "Endshards",
+		"language": "Java",
+		"source": "https://github.com/amot-dev/endshards",
+		"description":
+		"Endshards is a Minecraft Mod intended to overhaul the endgame progression with by upgrading the existing Netherite gear, and by adding 3 new sets of gear, a new dimension, and a new boss. Of course, this is all still in development, but the idea is to diversify some of the tools and armour with some special abilities, making different sets better for different tasks. For example, Ender gear is best suited for exploration, Netherite is best for combat, and Sculk is best for mining. The final Nightmare tier will be a jack of all trades, but master of none. This project was initially intended for me to learn Minecraft modding, but that turned out to be fairly simple so I expanded my goals. For more info, see the wiki on the github page!"
+	},
 		"title": "CPU Simulator",
 		"language": "C++",
-		"source": "https://www.github.com/asd1o1/cpu-simulator",
+		"source": "https://github.com/amot-dev/cpu-simulator",
 		"description":
-		"CPU Simulator does exactly what the name implies: simulates a computer processor. The program takes an input of a series of numbers (given as a csv), which it translates into binary. These binary numbers are all parsed as instructions by an ISA (instruction set architecture), then executed by the program. Through the use of the preprocessor, it's possible to change how many instructions are fetched, executed, and removed from the queue each 'clock cycle.'"
+		"CPU Simulator does exactly what the name implies: simulates a computer processor. The program takes an input of a series of numbers (given as a csv), which it translates into binary. These binary numbers are all parsed as instructions by a simple ISA (instruction set architecture), then executed by the program. Through the use of C++ preprocessor directives, it's possible to change how many instructions are fetched, executed, and removed from the queue each 'clock cycle.'"
 	},
 	{
 		"title": "Vending Machine",
 		"language": "VHDL",
-		"source": "https://www.github.com/asd1o1/cpu-simulator",
+		"source": "https://github.com/amot-dev/vending-machine",
 		"description":
-		"Vending Machine is a program intended to run on a physical vending machine to provide all the functions necessary, including setting prices, purchasing products, and even a backdoor to receive products for free :). Without a physical vending machine, the input must be set prior to runtime and the output is in a form of a digital signal graph, but of course, when ran on a physical machine, inputs would be relayed from the PIN pad, and outputs would trigger mechanisms to release a product."
+		"Vending Machine is a program intended to run on a physical vending machine FPGA. It provides all the necessary functions, including setting prices, purchasing products, and even a backdoor to receive products for free :). Without a physical vending machine, the input must be set prior to runtime and the output is in a form of a digital signal graph, but of course, when ran on a physical machine, inputs would be relayed from the PIN pad, and outputs would trigger mechanisms to process payment or release a product."
 	},
 	{
 		"title": "Star Trek Episodes",
-		"language": "HTML",
-		"source": "https://www.github.com/asd1o1/cpu-simulator",
+		"language": "JS",
+		"source": "https://github.com/amot-dev/star-trek-episodes",
 		"description":
-		"This website was a personal project of mine intended to sort through all Star Trek episodes based on various character, planet, and ship appearances (and eventually mood/tone as well). At the moment, it is left as a proof of concept (with TOS and TAS done, and TNG partially done) due to the large amount of Star Trek episodes. Currently, it's possible to select multiple tags to include or not include. These are searchable, or can simply be picked from a list of all tags appearing in the selected show."
+		"This website was a personal project of mine intended to sort through all Star Trek episodes based on various character, planet, and ship appearances (and eventually mood/tone as well). At the moment, it is left as a proof of concept (with TOS and TAS done, and TNG partially done) due to the large amount of Star Trek episodes, though I am planning to eventually overhaul everything using ReactJS to be less manual. Currently, it's possible to select multiple tags to include or not include. These are searchable, or can simply be picked from a list of all tags appearing in the selected show."
 	},
 	{
-		"title": "Chirper",
+		"title": "Multithread Game (unnamed)",
 		"language": "C++",
-		"source": "https://www.github.com/asd1o1/cpu-simulator",
+		"source": "https://github.com/amot-dev/multithread-game",
 		"description":
-		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget nisi nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus lectus enim, et pulvinar eros ultrices et. Vestibulum ac viverra ligula, faucibus tincidunt elit. Integer risus ex, bibendum et leo sed, imperdiet ornare nisi. Suspendisse ut molestie diam. Aenean auctor, ipsum ut blandit hendrerit, est libero rhoncus ipsum, vitae aliquet diam leo sed enim. Aenean laoreet mauris euismod porttitor varius. Ut luctus rutrum metus id laoreet. Aliquam ut interdum tellus, ut rutrum augue. Sed volutpat ut dui in mattis. Fusce accumsan, mi vitae semper sagittis, velit velit lobortis sem, tincidunt semper sem erat a mi."
-	},
-	{
-		"title": "Cycle Vest",
-		"language": "C++",
-		"source": "https://www.github.com/asd1o1/cpu-simulator",
-		"description":
-		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget nisi nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus lectus enim, et pulvinar eros ultrices et. Vestibulum ac viverra ligula, faucibus tincidunt elit. Integer risus ex, bibendum et leo sed, imperdiet ornare nisi. Suspendisse ut molestie diam. Aenean auctor, ipsum ut blandit hendrerit, est libero rhoncus ipsum, vitae aliquet diam leo sed enim. Aenean laoreet mauris euismod porttitor varius. Ut luctus rutrum metus id laoreet. Aliquam ut interdum tellus, ut rutrum augue. Sed volutpat ut dui in mattis. Fusce accumsan, mi vitae semper sagittis, velit velit lobortis sem, tincidunt semper sem erat a mi."
+		"This game is very much a work in progress, but is intended to test out what I've learned about testing and threads in C++. Currently, threads have not been implemented yet, though the game is separated into different components which will be run on different threads. The idea of the game is a 2D tile-based adventure/exploration game with NPCs and quests. Currently, the game is able to randomly generate a world with cities based on a given seed, and test that the pathing and generation algorithms work properly. For now, the game is on pause because Endshards is more exciting to work on."
 	},
 	{
 		"title": "Translink Buzzer Downloader",
 		"language": "Bash",
-		"source": "https://www.github.com/asd1o1/cpu-simulator",
+		"source": "https://github.com/amot-dev/get-translink-buzzer",
 		"description":
-		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget nisi nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus lectus enim, et pulvinar eros ultrices et. Vestibulum ac viverra ligula, faucibus tincidunt elit. Integer risus ex, bibendum et leo sed, imperdiet ornare nisi. Suspendisse ut molestie diam. Aenean auctor, ipsum ut blandit hendrerit, est libero rhoncus ipsum, vitae aliquet diam leo sed enim. Aenean laoreet mauris euismod porttitor varius. Ut luctus rutrum metus id laoreet. Aliquam ut interdum tellus, ut rutrum augue. Sed volutpat ut dui in mattis. Fusce accumsan, mi vitae semper sagittis, velit velit lobortis sem, tincidunt semper sem erat a mi."
+		"This is a fun script I made with a story behind it. Essentially, a local bus makes a slightly longer trip every Sunday/Holiday at 6am. I never knew why this was, and being an introvert, asking was not an option. Instead, I wrote this script (which sadly no longer works) to download every article of the transit company's news letter, and compact them into easily CTRL-F-abble decade-long PDFs. In the end, I learnt a lot about the history of this bus, but the mystery remains unsolved..."
+	},
+	{
+		"title": "Big Add",
+		"language": "Assembly",
+		"source": "https://github.com/amot-dev/big-add",
+		"description":
+		"To be added"
+	},
+	{
+		"title": "Chirper",
+		"language": "C++",
+		"source": "https://github.com/amot-dev/chirper",
+		"description":
+		"To be added"
+	},
+	{
+		"title": "Cycle Vest",
+		"language": "C++",
+		"source": "https://github.com/amot-dev/cycle-vest",
+		"description":
+		"To be added"
+	},
+	{
+		"title": "2048",
+		"language": "JS",
+		"source": "https://github.com/amot-dev/2048",
+		"description":
+		"This is yet another implementation of 2048, back from when I was first learning JavaScript. It keeps track of current and high score, and generally works, but has some odd quirks. Features? Bugs? Play it and decide for yourself."
 	}
 ]
 }
