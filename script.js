@@ -23,36 +23,40 @@ function getBorderStyle(language) {
 function Project(props) {
 	return React.createElement(
 		"div",
-		{ className: "w3-third w3-padding" },
+		{ className: "grid-item" },
 		React.createElement(
 			"div",
-			{ className: "w3-card w3-display-container" },
+			{ className: "card" },
 			React.createElement(
 				"div",
-				{ className: "language w3-col s2 m2 l2 w3-light-gray", style: getBorderStyle(props.lang) },
+				{ className: "info" },
 				React.createElement(
-					"h3",
-					{ className: "w3-center" },
-					props.lang
-				)
-			),
-			React.createElement(
-				"div",
-				{ className: "title w3-rest w3-black w3-opacity" },
+					"div",
+					{ className: "language", style: getBorderStyle(props.lang) },
+					React.createElement(
+						"h3",
+						null,
+						props.lang
+					)
+				),
 				React.createElement(
-					"h3",
-					{ className: "w3-center" },
-					props.title
+					"div",
+					{ className: "title" },
+					React.createElement(
+						"h3",
+						null,
+						props.title
+					)
 				)
 			),
 			React.createElement(
 				"p",
-				{ className: "w3-container w3-text-dark-gray" },
+				{ className: "desc" },
 				props.desc
 			),
 			React.createElement(
 				"a",
-				{ className: "github w3-button w3-block w3-light-gray w3-center w3-large", href: props.source, target: "_blank" },
+				{ className: "github w3-button", href: props.source, target: "_blank" },
 				"See it on GitHub"
 			)
 		)

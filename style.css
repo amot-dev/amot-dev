@@ -2,6 +2,10 @@
 	font-family: 'Roboto', sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -9,32 +13,141 @@ html, body {
 
 section {
 	margin-top: 4rem;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.title {
-	border-radius: 0 1.5rem 0 0;
+nav {
+	color: #ffffff;
+	opacity: 75%;
+	background-color: #000000;
 }
 
-.language {
-	border-radius: 1.5rem 0 0 0;
-	box-shadow: 0 0 0 0.2rem black inset;
-}
-
-.github {
-	border-radius: 0 0 1.5rem 1.5rem;
-}
-
-.w3-card {
-	border-radius: 1.5rem;
+nav, footer {
+	width: 100%;
+	overflow: hidden;
 }
 
 #home {
 	margin-top: 0em;
+	padding: 0.01rem 1rem;
 	background-image: url('https://via.placeholder.com/3456x1944');
 	background-attachment: fixed;
 	background-position: center;
 	background-position-y: 0;
-  	background-repeat: no-repeat;
+	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 100vh;
+}
+
+#title {
+	color: #ffffff;
+	opacity: 0.6;
+	font-size: 4rem;
+}
+
+#subtitle {
+	color: #ffffff;
+	opacity: 0.6;
+	font-size: 1.2rem;
+	letter-spacing: 0.2rem;
+}
+
+#copyright {
+	color: #ffffff;
+	opacity: 0.75;
+	text-align: center;
+	background-color: #000000;
+	margin-bottom: 0;
+}
+
+.section-title {
+	color: #3a3a3a;
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+.text {
+	color: #3a3a3a;
+	font-size: 1.2rem;
+	padding: 0.01rem 1rem;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 800px;
+}
+
+.grid-item {
+	padding: 0.5rem 1rem;
+	width: 100%;
+	float: left;
+}
+
+@media (min-width:600px) {
+	.grid-item {
+		width: 50%;
+	}
+}
+
+@media (min-width:1000px) {
+	.grid-item {
+		width: 33.33333%;
+	}
+}
+
+.card {
+	position: relative;
+	border-radius: 1.5rem;
+	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.info {
+	overflow: hidden;
+}
+
+.title {
+	color: #ffffff;
+	background-color: #000000;
+	opacity: 0.6;
+	overflow: hidden;
+	border-radius: 0 1.5rem 0 0;
+}
+
+.language {
+	color: #3a3a3a;
+	background-color: #f1f1f1;
+	border-radius: 1.5rem 0 0 0;
+	box-shadow: 0 0 0 0.2rem black inset;
+	width: 50%;
+	padding-bottom: 99999px;
+	margin-bottom: -99999px;
+	float: left;
+}
+
+@media (min-width:1000px) {
+	.language {
+		width: 30%;
+	}
+}
+
+@media (min-width:1600px) {
+	.language {
+		width: 15%;
+	}
+}
+
+.title > h3, .language > h3 {
+	text-align: center;
+}
+
+.desc {
+	color: #3a3a3a;
+	padding: 0.01rem 1rem;
+}
+
+.github {
+	text-align: center;
+	font-size: 1.2rem;
+	background-color: #f1f1f1;
+	border-radius: 0 0 1.5rem 1.5rem;
+	display: block;
 }

@@ -17,12 +17,14 @@ function getBorderStyle(language) {
 
 function Project(props) {
 	return (
-		<div className="w3-third w3-padding">
-			<div className="w3-card w3-display-container">
-				<div className="language w3-col s2 m2 l2 w3-light-gray" style={getBorderStyle(props.lang)}><h3 className="w3-center">{props.lang}</h3></div>
-				<div className="title w3-rest w3-black w3-opacity"><h3 className="w3-center">{props.title}</h3></div>
-				<p className="w3-container w3-text-dark-gray">{props.desc}</p>
-				<a className="github w3-button w3-block w3-light-gray w3-center w3-large" href={props.source} target="_blank">See it on GitHub</a>
+		<div className="grid-item">
+			<div className="card">
+				<div className="info">
+					<div className="language" style={getBorderStyle(props.lang)}><h3>{props.lang}</h3></div>
+					<div className="title"><h3>{props.title}</h3></div>
+				</div>
+				<p className="desc">{props.desc}</p>
+				<a className="github w3-button" href={props.source} target="_blank">See it on GitHub</a>
 			</div>
 		</div>
 	);
