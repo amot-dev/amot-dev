@@ -62,7 +62,8 @@ nav, footer {
 }
 
 #reactapp {
-	display: inline-block;
+	display: inline-flex;
+	flex-wrap: wrap;
 }
 
 .section-title {
@@ -127,7 +128,7 @@ nav, footer {
 	float: left;
 }
 
-@media (min-width:1000px) {
+@media (min-width:1200px) {
 	.language {
 		width: 30%;
 	}
@@ -135,7 +136,7 @@ nav, footer {
 
 @media (min-width:1600px) {
 	.language {
-		width: 15%;
+		width: 30%;
 	}
 }
 

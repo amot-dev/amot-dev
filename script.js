@@ -14,10 +14,13 @@ function renderProjects(data) {
 }
 
 function getBorderStyle(language) {
-	if (language == "C++") return { boxShadow: "0 0 0 0.2rem #f34b7d inset" };
-	if (language == "VHDL") return { boxShadow: "0 0 0 0.2rem #adb2cb inset" };
-	if (language == "JS") return { boxShadow: "0 0 0 0.2rem #e34c26 inset" };
-	if (language == "Bash") return { boxShadow: "0 0 0 0.2rem #89e051 inset" };
+	if (language == "C++") return { boxShadow: "0 0 0 0.25rem #f06292 inset" };
+	if (language == "Java") return { boxShadow: "0 0 0 0.25rem #ff8a65 inset" };
+	if (language == "Python") return { boxShadow: "0 0 0 0.25rem #7986cb inset" };
+	if (language == "JS") return { boxShadow: "0 0 0 0.25rem #ffd54f inset" };
+	if (language == "Bash") return { boxShadow: "0 0 0 0.25rem #aed581 inset" };
+	if (language == "Assembly") return { boxShadow: "0 0 0 0.25rem #90a4ae inset" };
+	if (language == "VHDL") return { boxShadow: "0 0 0 0.25rem #4db6ac inset" };
 }
 
 function Project(props) {
