@@ -39,6 +39,4 @@ function Project(props) {
 	);
 }
 
-fetch("./projects.json")
-	.then(response => response.json())
-	.then(obj => renderProjects(obj))
+fetch("./projects.json").then(response => response.json()).then(obj => renderProjects(obj))

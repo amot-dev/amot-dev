@@ -1,5 +1,5 @@
 * {
-	font-family: 'Roboto', sans-serif!important;
+	font-family: 'Roboto', sans-serif;
 	box-sizing: border-box;
 }
 
@@ -22,7 +22,11 @@ section {
 nav {
 	color: #ffffff;
 	opacity: 75%;
+	z-index:1000;
 	background-color: #000000;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
 }
 
 nav, footer {
