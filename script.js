@@ -5,10 +5,11 @@ function renderProjects(data) {
 	elements = data.projects.map(function (_ref, index) {
 		var title = _ref.title,
 		    language = _ref.language,
-		    source = _ref.source,
+		    github = _ref.github,
+		    site = _ref.site,
 		    description = _ref.description;
 
-		return React.createElement(Project, { title: title, lang: language, source: source, desc: description });
+		return React.createElement(Project, { title: title, lang: language, github: github, site: site, desc: description });
 	});
 	root.render(elements);
 }
@@ -57,10 +58,23 @@ function Project(props) {
 				{ className: "desc" },
 				props.desc
 			),
-			React.createElement(
+			props.site == "" ? React.createElement(
 				"a",
-				{ className: "github w3-button", href: props.source, target: "_blank" },
+				{ className: "site button", href: props.github, target: "_blank" },
 				"See it on GitHub"
+			) : React.createElement(
+				"div",
+				null,
+				React.createElement(
+					"a",
+					{ className: "site site-left button", href: props.github, target: "_blank" },
+					"See it on GitHub"
+				),
+				React.createElement(
+					"a",
+					{ className: "site site-right button", href: props.site, target: "_blank" },
+					"Try it out!"
+				)
 			)
 		)
 	);

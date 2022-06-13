@@ -2,8 +2,8 @@ function renderProjects(data) {
 	const root = ReactDOM.createRoot(document.getElementById('reactapp'))
 	let elements = []
 	console.log(data.projects)
-	elements = data.projects.map(({title, language, source, description}, index) => {
-		return <Project title={title} lang={language} source={source} desc={description} />
+	elements = data.projects.map(({title, language, github, site, description}, index) => {
+		return <Project title={title} lang={language} github={github} site={site} desc={description} />
 	})
 	root.render(elements)
 }
@@ -27,7 +27,13 @@ function Project(props) {
 					<div className="title"><h3>{props.title}</h3></div>
 				</div>
 				<p className="desc">{props.desc}</p>
-				<a className="github w3-button" href={props.source} target="_blank">See it on GitHub</a>
+				{props.site == ""
+					? <a className="site button" href={props.github} target="_blank">See it on GitHub</a>
+					: <div>
+						<a className="site site-left button" href={props.github} target="_blank">See it on GitHub</a>
+						<a className="site site-right button" href={props.site} target="_blank">Try it out!</a>
+					  </div>
+				}
 			</div>
 		</div>
 	);

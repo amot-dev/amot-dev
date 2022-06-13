@@ -1,5 +1,6 @@
 * {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif!important;
+	box-sizing: border-box;
 }
 
 html {
@@ -70,6 +71,31 @@ nav, footer {
 	color: #3a3a3a;
 	font-size: 2.5rem;
 	text-align: center;
+}
+
+.button {
+	border: none;
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	color: inherit;
+	background-color: inherit;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none
+}
+
+.button:hover{
+	color:#000000;
+	background-color:#cccccc;
 }
 
 .text {
@@ -149,10 +175,22 @@ nav, footer {
 	padding: 0.01rem 1rem;
 }
 
-.github {
+.site {
 	text-align: center;
 	font-size: 1.2rem;
 	background-color: #f1f1f1;
 	border-radius: 0 0 1.5rem 1.5rem;
 	display: block;
+}
+
+.site-left {
+	width: 50%;
+	display: inline-block;
+	border-radius: 0 0 0 1.5rem;
+}
+
+.site-right {
+	width: 50%;
+	display: inline-block;
+	border-radius: 0 0 1.5rem 0;
 }
