@@ -19,6 +19,7 @@ function getBorderStyle(language) {
 }
 
 function Project(props) {
+	if (props.desc == "") return null;
 	return (
 		<div className="grid-item">
 			<div className="card">

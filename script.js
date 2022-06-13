@@ -25,6 +25,7 @@ function getBorderStyle(language) {
 }
 
 function Project(props) {
+	if (props.desc == "") return null;
 	return React.createElement(
 		"div",
 		{ className: "grid-item" },
