@@ -13,7 +13,8 @@ html, body {
 }
 
 section {
-	margin-top: 4rem;
+	margin-top: 3.5rem;
+	padding-top: 0.5rem;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -32,7 +33,7 @@ nav, footer {
 #home {
 	margin-top: 0em;
 	padding: 0.01rem 1rem;
-	background-image: url('https://via.placeholder.com/3456x1944');
+	background-image: url('img/home.jpg');
 	background-attachment: fixed;
 	background-position: center;
 	background-position-y: 0;
