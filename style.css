@@ -40,7 +40,6 @@ nav, footer {
 	background-image: url('img/home.jpg');
 	background-attachment: fixed;
 	background-position: center;
-	background-position-y: 0;
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 100vh;
