@@ -1,3 +1,39 @@
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+	var title = document.getElementById('title');
+	var buttons = document.getElementById('buttons');
+
+	if (document.body.scrollTop > 0.8 * window.innerHeight || document.documentElement.scrollTop > 0.8 * window.innerHeight) {
+		if (window.matchMedia('(min-width: 450px) and (max-width: 703px)').matches && !buttons.classList.contains('scrolled')) {
+			buttons.classList.add('display-transitioning');
+			title.classList.add('scrolled');
+			setTimeout(function() {
+				buttons.classList.add('scrolled');
+				buttons.classList.remove('display-transitioning');
+			}, 200);
+		}
+		else {
+			title.classList.add('scrolled');
+			buttons.classList.add('scrolled');
+		}
+	}
+	else {
+		if (window.matchMedia('(min-width: 450px) and (max-width: 703px)').matches && buttons.classList.contains('scrolled')) {
+			buttons.classList.add('display-transitioning');
+			setTimeout(function() {
+				title.classList.remove('scrolled');
+				buttons.classList.remove('scrolled');
+				buttons.classList.remove('display-transitioning');
+			}, 200);
+		}
+		else {
+			title.classList.remove('scrolled');
+			buttons.classList.remove('scrolled');
+		}
+	}
+}
+
 function renderProjects(data) {
 	const root = ReactDOM.createRoot(document.getElementById('reactapp'))
 	let elements = []
