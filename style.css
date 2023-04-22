@@ -126,11 +126,13 @@ nav {
 }
 
 #subtitle {
+	position: absolute;
+	bottom: 0;
 	padding: 1rem;
-	padding-top: 10rem;
 	color: #ffffff;
-	opacity: 0.6;
-	font-size: 1.2rem;
+	opacity: 0.8;
+	text-shadow: 0.2rem 0.2rem 0 #000000;
+	font-size: 2.5rem;
 	letter-spacing: 0.2rem;
 }
 
