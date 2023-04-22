@@ -1,22 +1,28 @@
+// Scroll Animations
 window.onscroll = function () {
   scrollFunction();
 };
 function scrollFunction() {
   var title = document.getElementById('title');
   var buttons = document.getElementById('buttons');
+
+  // Scrolling down
   if (document.body.scrollTop > 0.8 * window.innerHeight || document.documentElement.scrollTop > 0.8 * window.innerHeight) {
+    // Need to transition display style between 450px and 703px (done by making buttons transparent during display change)
     if (window.matchMedia('(min-width: 450px) and (max-width: 703px)').matches && !buttons.classList.contains('scrolled')) {
       buttons.classList.add('display-transitioning');
       title.classList.add('scrolled');
       setTimeout(function () {
         buttons.classList.add('scrolled');
         buttons.classList.remove('display-transitioning');
-      }, 500);
+      }, 200);
     } else {
       title.classList.add('scrolled');
       buttons.classList.add('scrolled');
     }
-  } else {
+  }
+  // Scrolling up
+  else {
     if (window.matchMedia('(min-width: 450px) and (max-width: 703px)').matches && buttons.classList.contains('scrolled')) {
       buttons.classList.add('display-transitioning');
       setTimeout(function () {
@@ -30,10 +36,72 @@ function scrollFunction() {
     }
   }
 }
+
+// Make grid items in a row equal heights
+function setEqualHeight() {
+  const gridItems = document.querySelectorAll('.grid-item');
+  let start = 0;
+  let end;
+  let maxHeight = 0;
+
+  // Get number of grid items in a row
+  let itemsPerRow;
+  if (window.matchMedia('(min-width: 1000px)').matches) {
+    itemsPerRow = 3;
+  } else if (window.matchMedia('(min-width: 600px)').matches) {
+    itemsPerRow = 2;
+  } else {
+    itemsPerRow = 1;
+  }
+
+  // Iterate through grid items, row by row
+  while (start < gridItems.length) {
+    // Set end of current row
+    end = start + itemsPerRow;
+
+    // Reset heights to auto
+    for (let i = start; i < end && i < gridItems.length; i++) {
+      const desc = gridItems[i].querySelector('.desc');
+      desc.style.height = 'auto';
+    }
+
+    // Find max height in row
+    for (let i = start; i < end && i < gridItems.length; i++) {
+      const desc = gridItems[i].querySelector('.desc');
+      maxHeight = Math.max(maxHeight, desc.offsetHeight);
+    }
+
+    // Set all items in row to max height
+    for (let i = start; i < end && i < gridItems.length; i++) {
+      const desc = gridItems[i].querySelector('.desc');
+      desc.style.height = maxHeight + 'px';
+    }
+
+    // Move to next row
+    maxHeight = 0;
+    start = end;
+  }
+}
+window.addEventListener('resize', setEqualHeight);
+
+// Check when React finishes adding grid items, then run setEqualHeight
+const observer = new MutationObserver(mutations => {
+  for (const mutation of mutations) {
+    if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+      setEqualHeight();
+      break;
+    }
+  }
+});
+observer.observe(document.getElementById('reactapp'), {
+  childList: true,
+  subtree: true
+});
+
+// Render React elements
 function renderProjects(data) {
   const root = ReactDOM.createRoot(document.getElementById('reactapp'));
   let elements = [];
-  console.log(data.projects);
   elements = data.projects.map(({
     title,
     language,
