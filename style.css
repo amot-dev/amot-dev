@@ -1,8 +1,8 @@
 * {
-	font-family: 'Roboto', sans-serif;
-	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -23,27 +23,34 @@ body {
 }
 
 section {
-	background-color: #ffffff;
-	padding-top: 1rem;
 	margin-left: auto;
 	margin-right: auto;
+	padding-top: 1rem;
+	background-color: #ffffff;
+
 }
 
 nav {
-	z-index: 1000;
 	position: fixed;
-	font-size: 0;
 	top: 0;
+	z-index: 1000;
+	font-size: 0;
 }
 
 #title {
 	display: block;
-	color: #ffffff;
-	background-color: #404040;
 	padding: 0.5rem 1rem;
 	font-family: 'Chakra Petch', sans-serif;
 	font-size: 4rem;
+	color: #ffffff;
+	background-color: #404040;
 	transition: 0.5s;
+}
+
+.green {
+	font-family: inherit;
+	font-size: inherit;
+	color: #b5d854;
 }
 
 #title.scrolled {
@@ -60,12 +67,6 @@ nav {
 	#title:not(.scrolled) {
 		display: inline-block;
 	}
-}
-
-.green {
-	color: #b5d854;
-	font-family: inherit;
-	font-size: inherit;
 }
 
 #buttons {
@@ -96,17 +97,17 @@ nav {
 }
 
 .button {
-	border: none;
 	display: inline-block;
-	padding: 0.5rem;
 	overflow: hidden;
-	text-decoration: none;
-	color: inherit;
-	vertical-align: middle;
-	background-color: inherit;
+	padding: 0.5rem;
+	border: none;
 	text-align: center;
-	cursor: pointer;
+	text-decoration: none;
+	vertical-align: middle;
 	white-space: nowrap;
+	color: inherit;
+	background-color: inherit;
+	cursor: pointer;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -116,8 +117,8 @@ nav {
 }
 
 .button:hover{
-	color:#000000;
-	background-color:#cccccc;
+	color: #000000;
+	background-color: #cccccc;
 }
 
 #buttons > .button {
@@ -129,11 +130,11 @@ nav {
 	position: absolute;
 	bottom: 0;
 	padding: 1rem;
-	color: #ffffff;
-	opacity: 0.8;
-	text-shadow: 0.2rem 0.2rem 0 #000000;
 	font-size: 2.5rem;
 	letter-spacing: 0.2rem;
+	text-shadow: 0.2rem 0.2rem 0 #000000;
+	color: #ffffff;
+	opacity: 0.8;
 }
 
 #reactapp {
@@ -142,25 +143,25 @@ nav {
 }
 
 .section-title {
-	color: #404040;
 	padding: 1rem;
 	font-size: 2.5rem;
 	text-align: center;
+	color: #404040;
 }
 
 .text {
-	color: #404040;
-	font-size: 1.2rem;
-	padding: 0.01rem 1rem;
+	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 800px;
+	padding: 0.01rem 1rem;
+	font-size: 1.2rem;
+	color: #404040;
 }
 
 .grid-item {
-	padding: 0.5rem 1rem;
-	width: 100%;
 	float: left;
+	width: 100%;
+	padding: 0.5rem 1rem;
 }
 
 @media (min-width: 600px) {
@@ -186,32 +187,26 @@ nav {
 }
 
 .title {
+	overflow: hidden;
+	padding: 0.5rem;
+	border-radius: 0 1.5rem 0 0;
 	color: #ffffff;
 	background-color: #404040;
-	padding: 0.5rem;
-	overflow: hidden;
-	border-radius: 0 1.5rem 0 0;
 }
 
 .language {
-	color: #404040;
-	background-color: #f1f1f1;
+	float: left;
+	width: 50%;
 	padding: 0.5rem;
+	margin-bottom: -99999px;
+	padding-bottom: 99999px;
 	border-radius: 1.5rem 0 0 0;
 	box-shadow: 0 0 0 0.2rem #000000 inset;
-	width: 50%;
-	padding-bottom: 99999px;
-	margin-bottom: -99999px;
-	float: left;
+	color: #404040;
+	background-color: #f1f1f1;
 }
 
 @media (min-width: 1200px) {
-	.language {
-		width: 30%;
-	}
-}
-
-@media (min-width: 1600px) {
 	.language {
 		width: 30%;
 	}
@@ -222,32 +217,32 @@ nav {
 }
 
 .desc {
-	color: #404040;
 	padding: 0.5rem 1rem;
+	color: #404040;
 }
 
 .site {
-	text-align: center;
-	font-size: 1.2rem;
-	background-color: #f1f1f1;
-	border-radius: 0 0 1.5rem 1.5rem;
 	display: block;
+	border-radius: 0 0 1.5rem 1.5rem;
+	font-size: 1.2rem;
+	text-align: center;
+	background-color: #f1f1f1;
 }
 
 .site-left {
-	width: 50%;
 	display: inline-block;
+	width: 50%;
 	border-radius: 0 0 0 1.5rem;
 }
 
 .site-right {
-	width: 50%;
 	display: inline-block;
+	width: 50%;
 	border-radius: 0 0 1.5rem 0;
 }
 
 #copyright {
-	color: #ffffff;
 	text-align: center;
+	color: #ffffff;
 	background-color: #404040;
 }
