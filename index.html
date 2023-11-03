@@ -18,9 +18,7 @@
 				<a href="#home" class="button">Home</a>
 				<a href="#about" class="button">About</a>
 				<a href="#projects" class="button">Projects</a>
-<!--
 				<a href="#contact" class="button">Contact</a>
--->
 			</div>
 		</nav>
 
@@ -37,21 +35,25 @@
 			</p>
 		</section>
 
-		<section id="projects" style="min-height:100vh">
+		<section id="projects">
 			<h2 class="section-title">Some Projects</h2>
 			<script type="module" src="script.js"></script>
 			<div id="reactapp" />
 		</section>
-<!--
-		<section id="contact">
+
+		<section id="contact" style="min-height:97.5vh">
 			<h2 class="section-title">Contact Me</h2>
-			<p class="text">
-			
-			In Progress...
-			
-			</p>
+			<script type="module" src="formspree.js"></script>
+			<form action="https://formspree.io/f/xgejqaew" method="POST" class="text">
+				<label class="form-label">Email</label>
+				<input class="form-input" type="email" name="email" placeholder="yourname@domain.tld"></input>
+				<label class="form-label">Message</label>
+				<textarea class="form-input" name="message" rows=20 placeholder="Hi Alexander! I was thinking..."></textarea>
+				<button class="button form-send" type="submit">Send</button>
+			</form>
+			<br><br><br>
 		</section>
--->
+
 		<footer>
 			<p id="copyright">©Copyright 2023 by Alexander Mot. All rights reversed.</p>
 		</footer>

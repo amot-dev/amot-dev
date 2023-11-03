@@ -1,4 +1,9 @@
-// Scroll Animations
+/* 	Scroll Animations
+	Some important screen widths (need to be updated if header is updated, here and in CSS):
+		- Minimum size to fit navbar and title in one row when not scrolled: 806px
+		- Minimum size to fit navbar and title in one row when scrolled: 551px
+		- Minimum size to fit navbar in one row: 366px
+*/
 window.onscroll = function () {
   scrollFunction();
 };
@@ -8,14 +13,24 @@ function scrollFunction() {
 
   // Scrolling down
   if (document.body.scrollTop > 0.8 * window.innerHeight || document.documentElement.scrollTop > 0.8 * window.innerHeight) {
-    // Need to transition display style between 450px and 703px (done by making buttons transparent during display change)
-    if (window.matchMedia('(min-width: 450px) and (max-width: 703px)').matches && !buttons.classList.contains('scrolled')) {
+    // Need to transition display style between 551px and 805px (done by making buttons transparent during display change)
+    // This is because between those sizes, the navbar needs to move from inline to a new row or vice versa
+    if (window.matchMedia('(min-width: 551px) and (max-width: 805px)').matches && !buttons.classList.contains('scrolled')) {
+      // Start scroll animation
       buttons.classList.add('display-transitioning');
       title.classList.add('scrolled');
-      setTimeout(function () {
-        buttons.classList.add('scrolled');
-        buttons.classList.remove('display-transitioning');
-      }, 200);
+      buttons.classList.add('scrolled');
+      // Wait until there's enough room for both title and navbar before completing button transition
+      setTimeout(function checkWidth() {
+        var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+        if (title.offsetWidth + buttons.offsetWidth < viewportWidth) {
+          buttons.classList.remove('display-transitioning');
+        }
+        // If there's no room, wait a bit and check again
+        else {
+          setTimeout(checkWidth, 50);
+        }
+      }, 50);
     } else {
       title.classList.add('scrolled');
       buttons.classList.add('scrolled');
@@ -23,13 +38,22 @@ function scrollFunction() {
   }
   // Scrolling up
   else {
-    if (window.matchMedia('(min-width: 450px) and (max-width: 703px)').matches && buttons.classList.contains('scrolled')) {
+    if (window.matchMedia('(min-width: 551px) and (max-width: 805px)').matches && buttons.classList.contains('scrolled')) {
+      // Start scroll animation
       buttons.classList.add('display-transitioning');
-      setTimeout(function () {
-        title.classList.remove('scrolled');
-        buttons.classList.remove('scrolled');
-        buttons.classList.remove('display-transitioning');
-      }, 200);
+      title.classList.remove('scrolled');
+      buttons.classList.remove('scrolled');
+      // Wait until there's not enough room for both title and navbar before completing button transition
+      setTimeout(function checkWidth() {
+        var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+        if (title.offsetWidth + buttons.offsetWidth > viewportWidth) {
+          buttons.classList.remove('display-transitioning');
+        }
+        // If there's still room, wait a bit and check again
+        else {
+          setTimeout(checkWidth, 50);
+        }
+      }, 50);
     } else {
       title.classList.remove('scrolled');
       buttons.classList.remove('scrolled');
