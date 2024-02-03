@@ -27,7 +27,12 @@ section {
 	margin-right: auto;
 	padding-top: 1rem;
 	background-color: #ffffff;
+}
 
+@media (prefers-color-scheme: dark) {
+	section {
+		background-color: #404040;
+	}
 }
 
 nav {
@@ -148,6 +153,12 @@ nav {
 	color: #404040;
 }
 
+@media (prefers-color-scheme: dark) {
+	.section-title {
+		color: #ffffff;
+	}
+}
+
 .text {
 	max-width: 800px;
 	margin-left: auto;
@@ -155,6 +166,12 @@ nav {
 	padding: 0.01rem 1rem;
 	font-size: 1.3rem;
 	color: #404040;
+}
+
+@media (prefers-color-scheme: dark) {
+	.text {
+		color: #ffffff;
+	}
 }
 
 .grid-item {
@@ -178,6 +195,11 @@ nav {
 .card {
 	position: relative;
 	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+	transition: transform 0.25s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.03);
 }
 
 .info {
@@ -193,11 +215,24 @@ nav {
 	background-color: #404040;
 }
 
+@media (prefers-color-scheme: dark) {
+	.title {
+		color: #404040;
+		background-color: #f1f1f1;
+	}
+}
+
 .language {
 	display: inline-block;
 	padding: 0.75rem;
 	text-align: right;
 	background-color: #404040;
+}
+
+@media (prefers-color-scheme: dark) {
+	.language {
+		background-color: #f1f1f1;
+	}
 }
 
 .featured-image {
@@ -210,6 +245,12 @@ nav {
 	line-height: 1.5;
 	font-size: 1.1rem;
 	color: #404040;
+}
+
+@media (prefers-color-scheme: dark) {
+	.desc {
+		color: #f1f1f1;
+	}
 }
 
 .site {
@@ -234,6 +275,13 @@ nav {
 	color: #404040;
 }
 
+@media (prefers-color-scheme: dark) {
+	.form-label {
+		color: #f1f1f1;
+		background-color: #404040;
+	}
+}
+
 .form-input {
 	width: 100%;
 	padding: 0.5rem;
@@ -250,12 +298,19 @@ nav {
 	border: none;
 	font-size: 1.2rem;
 	text-align: center;
-	color: #ffffff;
+	color: #f1f1f1;
 	background-color: #404040;
+}
+
+@media (prefers-color-scheme: dark) {
+	.form-send {
+		color: #404040;
+		background-color: #f1f1f1;
+	}
 }
 
 #copyright {
 	text-align: center;
-	color: #ffffff;
+	color: #f1f1f1;
 	background-color: #404040;
 }

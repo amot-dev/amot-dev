@@ -109,6 +109,7 @@ function setEqualHeight() {
 		start = end;
 	}
 }
+
 window.addEventListener('resize', setEqualHeight);
 
 // Check when React finishes adding grid items, then run setEqualHeight
