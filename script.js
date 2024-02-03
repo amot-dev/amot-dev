@@ -83,22 +83,25 @@ function setEqualHeight() {
     // Set end of current row
     end = start + itemsPerRow;
 
-    // Reset heights to auto
+    // Reset card and description heights to auto
     for (let i = start; i < end && i < gridItems.length; i++) {
+      const card = gridItems[i].querySelector('.card');
       const desc = gridItems[i].querySelector('.desc');
+      card.style.height = 'auto';
       desc.style.height = 'auto';
     }
 
-    // Find max height in row
+    // Find max card height in row
     for (let i = start; i < end && i < gridItems.length; i++) {
-      const desc = gridItems[i].querySelector('.desc');
-      maxHeight = Math.max(maxHeight, desc.offsetHeight);
+      const card = gridItems[i].querySelector('.card');
+      maxHeight = Math.max(maxHeight, card.offsetHeight);
     }
 
-    // Set all items in row to max height
+    // Set all description heights in a row such that the cards in that row are the same height
     for (let i = start; i < end && i < gridItems.length; i++) {
+      const card = gridItems[i].querySelector('.card');
       const desc = gridItems[i].querySelector('.desc');
-      desc.style.height = maxHeight + 'px';
+      desc.style.height = maxHeight + desc.offsetHeight - card.offsetHeight + 'px';
     }
 
     // Move to next row
