@@ -61,7 +61,7 @@ function scrollFunction() {
 	}
 }
 
-// Make grid items in a row equal heights
+// Make cards in the same row equal heights
 function setEqualHeight() {
 	const gridItems = document.querySelectorAll('.grid-item');
 	let start = 0;
@@ -109,21 +109,9 @@ function setEqualHeight() {
 		start = end;
 	}
 }
-
 window.addEventListener('resize', setEqualHeight);
 
-// Check when React finishes adding grid items, then run setEqualHeight
-const observer = new MutationObserver(mutations => {
-	for (const mutation of mutations) {
-		if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
-			setEqualHeight();
-			break;
-		}
-	}
-});
-observer.observe(document.getElementById('reactapp'), { childList: true, subtree: true });
-
-// Render React elements
+// Render React elements from projects.json
 function renderProjects(data) {
 	const root = ReactDOM.createRoot(document.getElementById('reactapp'))
 	let elements = []
@@ -132,9 +120,10 @@ function renderProjects(data) {
 	})
 	root.render(elements);
 }
+fetch("./projects.json").then(response => response.json()).then(obj => renderProjects(obj))
 
+// Format text color for various prgramming languages or frameworks
 function setTextColor(language) {
-	// Format text color for various prgramming languages or frameworks
 	if (language == "Arduino") return {color: "#4db6ac"}	// Teal 300
 	if (language == "Assembly") return {color: "#90a4ae"}	// Blue Gray 300
 	if (language == "Bash") return {color: "#aed581"}		// Light Green 300
@@ -144,11 +133,19 @@ function setTextColor(language) {
 	if (language == "JS") return {color: "#ffd54f"}			// Amber 300
 	if (language == "Python") return {color: "#7986cb"}		// Indigo 300
 	if (language == "VHDL") return {color: "#9575cd"}		// Deep Purple 300
-	
 }
 
+// Define React Component
 function Project(props) {
+	// Run after initial load
+	React.useEffect(() => {
+		setEqualHeight();
+	}, []);
+	
+	// Skip rendering elements not set to visible and elements with an empty description
 	if (props.visible == "false" || props.desc == "") return null;
+	
+	// Template for cards
 	return (
 		<div className="grid-item">
 			<div className="card">
@@ -172,5 +169,3 @@ function Project(props) {
 		</div>
 	);
 }
-
-fetch("./projects.json").then(response => response.json()).then(obj => renderProjects(obj))
