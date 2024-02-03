@@ -140,7 +140,7 @@ function Project(props) {
 	// Run after initial load
 	React.useEffect(() => {
 		setEqualHeight();
-	}, []);
+	});
 	
 	// Skip rendering elements not set to visible and elements with an empty description
 	if (props.visible == "false" || props.desc == "") return null;

@@ -63,7 +63,6 @@ function scrollFunction() {
 
 // Make cards in the same row equal heights
 function setEqualHeight() {
-  console.log("womp womp");
   const gridItems = document.querySelectorAll('.grid-item');
   let start = 0;
   let end;
@@ -175,7 +174,7 @@ function Project(props) {
   // Run after initial load
   React.useEffect(() => {
     setEqualHeight();
-  }, []);
+  });
 
   // Skip rendering elements not set to visible and elements with an empty description
   if (props.visible == "false" || props.desc == "") return null;

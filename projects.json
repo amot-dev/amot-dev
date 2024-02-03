@@ -16,7 +16,7 @@
 		"language": "Java",
 		"github": "https://github.com/amot-dev/cursed-table-revamped",
 		"site": "https://modrinth.com/mod/cursed-table-revamped",
-		"photo": "img/cursed-table-revamped.png",
+		"photo": "img/projects/cursed-table-revamped.png",
 		"description":
 		"Cursed Table Revamped is another Minecraft Mod, though quite a bit smaller than Endshards. In the unmodified game, treasure and curse enchantments do not appear in the Enchanting Table at all. With Cursed Table Revamped, by default, curses are added to the list of possible enchants. For me, that wasn't quite enough though, so I added a few custom game rules that allow the player to pick and choose exactly which enchants can appear."
 	},
@@ -26,7 +26,7 @@
 		"language": "Python",
 		"github": "https://github.com/christophertesar/wec_2024",
 		"site": "",
-		"photo": "img/ez-note.png",
+		"photo": "img/projects/ez-note.png",
 		"description":
 		"Ez-Note is a note storing app built around individuals with cognitive disabilities. Its primary features include speech-to-text transcription of recorded notes, image-to-text conversion of photos of text, AI text note summarization, and text-to-speech dictation of notes. Ez-Note provides a way for users to run all this processing on their input files, and store everything in a central location. This app was developed in 8 hours for the Western Engineering Competition 2024, where it won my team and I first place in the Programming Competition."
 	},
@@ -36,7 +36,7 @@
 		"language": "Flutter",
 		"github": "https://github.com/amot-dev/RescueReady",
 		"site": "",
-		"photo": "img/rescue-ready.png",
+		"photo": "img/projects/rescue-ready.png",
 		"description":
 		"RescueReady is a Flutter application designed to assist in emergency situations. The app provides a platform for users to request help, offer assistance, and access information about local emergencies and emergency guides. This mainly serves as a means to reduce burden on the 911 lines during natural disasters or other emergencies. If you are simply trapped, and not in any imminent danger, a trained and vetted volunteer can be dispatched to your location, rather than having to burden official emergency response teams with your call."
 	},
@@ -46,7 +46,7 @@
 		"language": "JS",
 		"github": "https://github.com/amot-dev/star-trek-episodes",
 		"site": "https://amot.dev/star-trek-episodes/",
-		"photo": "img/star-trek-episodes.png",
+		"photo": "img/projects/star-trek-episodes.png",
 		"description":
 		"This website was a personal project of mine intended to sort through all Star Trek episodes based on various character, planet, and ship appearances (and eventually mood/tone as well). At the moment, it is left as a proof of concept (with TOS and TAS done, and TNG partially done) due to the large amount of Star Trek episodes, though I am planning to eventually overhaul everything using ReactJS to be less manual. Currently, it's possible to select multiple tags to include or not include. These are searchable, or can simply be picked from a list of all tags appearing in the selected show."
 	},
@@ -56,7 +56,7 @@
 		"language": "JS",
 		"github": "https://github.com/amot-dev/2048",
 		"site": "https://amot.dev/2048/",
-		"photo": "img/2048.png",
+		"photo": "img/projects/2048.png",
 		"description":
 		"This is yet another implementation of 2048, back from when I was first learning JavaScript. It keeps track of current and high score, and generally works, but has some odd quirks. Features? Bugs? Play it and decide for yourself."
 	},
