@@ -123,31 +123,39 @@ observer.observe(document.getElementById('reactapp'), { childList: true, subtree
 function renderProjects(data) {
 	const root = ReactDOM.createRoot(document.getElementById('reactapp'))
 	let elements = []
-	elements = data.projects.map(({title, language, github, site, description}, index) => {
-		return <Project title={title} lang={language} github={github} site={site} desc={description} />
+	elements = data.projects.map(({visible, title, language, github, site, photo, description}, index) => {
+		return <Project visible={visible} title={title} lang={language} github={github} site={site} photo={photo} desc={description} />
 	})
 	root.render(elements);
 }
 
-function getBorderStyle(language) {
-	if (language == "C++") return {boxShadow: "0 0 0 0.25rem #f06292 inset"}
-	if (language == "Java") return {boxShadow: "0 0 0 0.25rem #ff8a65 inset"}
-	if (language == "Python") return {boxShadow: "0 0 0 0.25rem #7986cb inset"}
-	if (language == "JS") return {boxShadow: "0 0 0 0.25rem #ffd54f inset"}
-	if (language == "Bash") return {boxShadow: "0 0 0 0.25rem #aed581 inset"}
-	if (language == "Assembly") return {boxShadow: "0 0 0 0.25rem #90a4ae inset"}
-	if (language == "VHDL") return {boxShadow: "0 0 0 0.25rem #4db6ac inset"}
+function setTextColor(language) {
+	// Format text color for various prgramming languages or frameworks
+	if (language == "Arduino") return {color: "#4db6ac"}	// Teal 300
+	if (language == "Assembly") return {color: "#90a4ae"}	// Blue Gray 300
+	if (language == "Bash") return {color: "#aed581"}		// Light Green 300
+	if (language == "C++") return {color: "#f06292"}		// Pink 300
+	if (language == "Flutter") return {color: "#4dd0e1"}	// Cyan 300
+	if (language == "Java") return {color: "#ff8a65"}		// Deep Orange 300
+	if (language == "JS") return {color: "#ffd54f"}			// Amber 300
+	if (language == "Python") return {color: "#7986cb"}		// Indigo 300
+	if (language == "VHDL") return {color: "#9575cd"}		// Deep Purple 300
+	
 }
 
 function Project(props) {
-	if (props.desc == "") return null;
+	if (props.visible == "false" || props.desc == "") return null;
 	return (
 		<div className="grid-item">
 			<div className="card">
 				<div className="info">
-					<div className="language" style={getBorderStyle(props.lang)}><h3>{props.lang}</h3></div>
-					<div className="title"><h3>{props.title}</h3></div>
+					<h3 className="title">{props.title}</h3>
+					<h3 className="language" style={setTextColor(props.lang)}>{props.lang}</h3>
 				</div>
+				{props.photo != "" &&
+					<img className="featured-image" src={props.photo}></img>
+				}
+				
 				<p className="desc">{props.desc}</p>
 				{props.site == ""
 					? <a className="site button" href={props.github} target="_blank">See it on GitHub</a>

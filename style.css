@@ -177,52 +177,42 @@ nav {
 
 .card {
 	position: relative;
-	border-radius: 1.5rem;
 	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 
 .info {
-	overflow: hidden;
+	width: 100%;
+	display: flex;
 }
 
 .title {
-	overflow: hidden;
-	padding: 0.5rem;
-	border-radius: 0 1.5rem 0 0;
+	display: inline-block;
+	flex-grow: 1;
+	padding: 0.75rem;
 	color: #ffffff;
 	background-color: #404040;
 }
 
 .language {
-	float: left;
-	width: 50%;
-	padding: 0.5rem;
-	margin-bottom: -99999px;
-	padding-bottom: 99999px;
-	border-radius: 1.5rem 0 0 0;
-	box-shadow: 0 0 0 0.2rem #000000 inset;
-	color: #404040;
-	background-color: #f1f1f1;
+	display: inline-block;
+	padding: 0.75rem;
+	text-align: right;
+	background-color: #404040;
 }
 
-@media (min-width: 1200px) {
-	.language {
-		width: 30%;
-	}
-}
-
-.title > h3, .language > h3 {
-	text-align: center;
+.featured-image {
+	display: block;
+	width: 100%;
 }
 
 .desc {
 	padding: 0.5rem 1rem;
+	line-height: 1.5;
 	color: #404040;
 }
 
 .site {
 	display: block;
-	border-radius: 0 0 1.5rem 1.5rem;
 	font-size: 1.2rem;
 	text-align: center;
 	background-color: #f1f1f1;
@@ -231,13 +221,11 @@ nav {
 .site-left {
 	display: inline-block;
 	width: 50%;
-	border-radius: 0 0 0 1.5rem;
 }
 
 .site-right {
 	display: inline-block;
 	width: 50%;
-	border-radius: 0 0 1.5rem 0;
 }
 
 .form-label {

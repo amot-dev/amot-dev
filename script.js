@@ -127,59 +127,74 @@ function renderProjects(data) {
   const root = ReactDOM.createRoot(document.getElementById('reactapp'));
   let elements = [];
   elements = data.projects.map(({
+    visible,
     title,
     language,
     github,
     site,
+    photo,
     description
   }, index) => {
     return /*#__PURE__*/React.createElement(Project, {
+      visible: visible,
       title: title,
       lang: language,
       github: github,
       site: site,
+      photo: photo,
       desc: description
     });
   });
   root.render(elements);
 }
-function getBorderStyle(language) {
-  if (language == "C++") return {
-    boxShadow: "0 0 0 0.25rem #f06292 inset"
-  };
-  if (language == "Java") return {
-    boxShadow: "0 0 0 0.25rem #ff8a65 inset"
-  };
-  if (language == "Python") return {
-    boxShadow: "0 0 0 0.25rem #7986cb inset"
-  };
-  if (language == "JS") return {
-    boxShadow: "0 0 0 0.25rem #ffd54f inset"
-  };
-  if (language == "Bash") return {
-    boxShadow: "0 0 0 0.25rem #aed581 inset"
-  };
+function setTextColor(language) {
+  // Format text color for various prgramming languages or frameworks
+  if (language == "Arduino") return {
+    color: "#4db6ac"
+  }; // Teal 300
   if (language == "Assembly") return {
-    boxShadow: "0 0 0 0.25rem #90a4ae inset"
-  };
+    color: "#90a4ae"
+  }; // Blue Gray 300
+  if (language == "Bash") return {
+    color: "#aed581"
+  }; // Light Green 300
+  if (language == "C++") return {
+    color: "#f06292"
+  }; // Pink 300
+  if (language == "Flutter") return {
+    color: "#4dd0e1"
+  }; // Cyan 300
+  if (language == "Java") return {
+    color: "#ff8a65"
+  }; // Deep Orange 300
+  if (language == "JS") return {
+    color: "#ffd54f"
+  }; // Amber 300
+  if (language == "Python") return {
+    color: "#7986cb"
+  }; // Indigo 300
   if (language == "VHDL") return {
-    boxShadow: "0 0 0 0.25rem #4db6ac inset"
-  };
+    color: "#9575cd"
+  }; // Deep Purple 300
 }
+
 function Project(props) {
-  if (props.desc == "") return null;
+  if (props.visible == "false" || props.desc == "") return null;
   return /*#__PURE__*/React.createElement("div", {
     className: "grid-item"
   }, /*#__PURE__*/React.createElement("div", {
     className: "card"
   }, /*#__PURE__*/React.createElement("div", {
     className: "info"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "language",
-    style: getBorderStyle(props.lang)
-  }, /*#__PURE__*/React.createElement("h3", null, props.lang)), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("h3", {
     className: "title"
-  }, /*#__PURE__*/React.createElement("h3", null, props.title))), /*#__PURE__*/React.createElement("p", {
+  }, props.title), /*#__PURE__*/React.createElement("h3", {
+    className: "language",
+    style: setTextColor(props.lang)
+  }, props.lang)), props.photo != "" && /*#__PURE__*/React.createElement("img", {
+    className: "featured-image",
+    src: props.photo
+  }), /*#__PURE__*/React.createElement("p", {
     className: "desc"
   }, props.desc), props.site == "" ? /*#__PURE__*/React.createElement("a", {
     className: "site button",

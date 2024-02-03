@@ -1,82 +1,112 @@
 {
 "projects": [
 	{
+		"visible": "true",
 		"title": "Endshards",
 		"language": "Java",
 		"github": "https://github.com/amot-dev/endshards",
 		"site": "",
+		"photo": "",
 		"description":
 		"Endshards is a Minecraft Mod intended to overhaul the endgame progression with by upgrading the existing Netherite gear, and by adding 3 new sets of gear, a new dimension, and a new boss. Of course, this is all still in development, but the idea is to diversify some of the tools and armour with some special abilities, making different sets better for different tasks. For example, Ender gear is best suited for exploration, Netherite is best for combat, and Sculk is best for mining. The final Nightmare tier will be a jack of all trades, but master of none. This project was initially intended for me to learn Minecraft modding, but that turned out to be fairly simple so I expanded my goals. For more info, see the wiki on the github page!"
 	},
 	{
+		"visible": "true",
+		"title": "Cursed Table Revamped",
+		"language": "Java",
+		"github": "https://github.com/amot-dev/cursed-table-revamped",
+		"site": "",
+		"photo": "img/cursed-table-revamped.png",
+		"description":
+		"Cursed Table Revamped is another Minecraft Mod, though quite a bit smaller than Endshards. In the unmodified game, treasure and curse enchantments do not appear in the Enchanting Table at all. With Cursed Table Revamped, by default, curses are added to the list of possible enchants. For me, that wasn't quite enough though, so I added a few custom game rules that allow the player to pick and choose exactly which enchants can appear."
+	},
+	{
+		"visible": "true",
+		"title": "RescueReady",
+		"language": "Flutter",
+		"github": "https://github.com/amot-dev/RescueReady",
+		"site": "",
+		"photo": "img/rescue-ready.png",
+		"description":
+		"RescueReady is a Flutter application designed to assist in emergency situations. The app provides a platform for users to request help, offer assistance, and access information about local emergencies and emergency guides. This mainly serves as a means to reduce burden on the 911 lines during natural disasters or other emergencies. If you are simply trapped, and not in any imminent danger, a trained and vetted volunteer can be dispatched to your location, rather than having to burden official emergency response teams with your call."
+	},
+	{
+		"visible": "true",
 		"title": "CPU Simulator",
 		"language": "C++",
 		"github": "https://github.com/amot-dev/cpu-simulator",
 		"site": "",
+		"photo": "",
 		"description":
 		"CPU Simulator does exactly what the name implies: simulates a computer processor. The program takes an input of a series of numbers (given as a csv), which it translates into binary. These binary numbers are all parsed as instructions by a simple ISA (instruction set architecture), then executed by the program. Through the use of C++ preprocessor directives, it's possible to change how many instructions are fetched, executed, and removed from the queue each 'clock cycle.'"
 	},
 	{
+		"visible": "true",
 		"title": "Vending Machine",
 		"language": "VHDL",
 		"github": "https://github.com/amot-dev/vending-machine",
 		"site": "",
+		"photo": "",
 		"description":
 		"Vending Machine is a program intended to run on a physical vending machine FPGA. It provides all the necessary functions, including setting prices, purchasing products, and even a backdoor to receive products for free :). Without a physical vending machine, the input must be set prior to runtime and the output is in a form of a digital signal graph, but of course, when ran on a physical machine, inputs would be relayed from the PIN pad, and outputs would trigger mechanisms to process payment or release a product."
 	},
 	{
+		"visible": "true",
 		"title": "Star Trek Episodes",
 		"language": "JS",
 		"github": "https://github.com/amot-dev/star-trek-episodes",
 		"site": "https://amot.dev/star-trek-episodes/",
+		"photo": "img/star-trek-episodes.png",
 		"description":
 		"This website was a personal project of mine intended to sort through all Star Trek episodes based on various character, planet, and ship appearances (and eventually mood/tone as well). At the moment, it is left as a proof of concept (with TOS and TAS done, and TNG partially done) due to the large amount of Star Trek episodes, though I am planning to eventually overhaul everything using ReactJS to be less manual. Currently, it's possible to select multiple tags to include or not include. These are searchable, or can simply be picked from a list of all tags appearing in the selected show."
 	},
 	{
+		"visible": "false",
 		"title": "Multithread Game (unnamed)",
 		"language": "C++",
 		"github": "https://github.com/amot-dev/multithread-game",
 		"site": "",
+		"photo": "",
 		"description":
 		"This game is very much a work in progress, but is intended to test out what I've learned about testing and threads in C++. Currently, threads have not been implemented yet, though the game is separated into different components which will be run on different threads. The idea of the game is a 2D tile-based adventure/exploration game with NPCs and quests. Currently, the game is able to randomly generate a world with cities based on a given seed, and test that the pathing and generation algorithms work properly. For now, the game is on pause because Endshards is more exciting to work on."
 	},
 	{
+		"visible": "true",
 		"title": "Translink Buzzer Downloader",
 		"language": "Bash",
 		"github": "https://github.com/amot-dev/get-translink-buzzer",
 		"site": "",
+		"photo": "",
 		"description":
 		"This is a fun script I made with a story behind it. Essentially, a local bus makes a slightly longer trip every Sunday/Holiday at 6am. I never knew why this was, and being an introvert, asking was not an option. Instead, I wrote this script (which sadly no longer works) to download every article of the transit company's news letter, and compact them into easily CTRL-F-abble decade-long PDFs. In the end, I learnt a lot about the history of this bus, but the mystery remains unsolved..."
 	},
 	{
+		"visible": "true",
 		"title": "Big Add",
 		"language": "Assembly",
 		"github": "https://github.com/amot-dev/big-add",
 		"site": "",
+		"photo": "",
 		"description":
-		""
+		"Big Add is an assembly (ARM 32-bit) subroutine that performs arbitrary-sized unsigned addition. This was made as my first big assignment for a course on Assembly programming in Big Endien Arm."
 	},
 	{
-		"title": "Chirper",
-		"language": "C++",
-		"github": "https://github.com/amot-dev/chirper",
-		"site": "",
-		"description":
-		""
-	},
-	{
+		"visible": "true",
 		"title": "Cycle Vest",
-		"language": "C++",
+		"language": "Arduino",
 		"github": "https://github.com/amot-dev/cycle-vest",
 		"site": "",
+		"photo": "",
 		"description":
-		""
+		"Cycle Vest was a project I, along with a few others made in my first engineering design course. Essentially, it's a jacket with lights for cycling. A palm-attached control panel allows the user to light up the arm they are using to signal, making it more visible to other vehicles. Additionally, more lights on the back of the jacket light up automatically in low-light conditions, triggered by a photoresistor."
 	},
 	{
+		"visible": "true",
 		"title": "2048",
 		"language": "JS",
 		"github": "https://github.com/amot-dev/2048",
 		"site": "https://amot.dev/2048/",
+		"photo": "img/2048.png",
 		"description":
 		"This is yet another implementation of 2048, back from when I was first learning JavaScript. It keeps track of current and high score, and generally works, but has some odd quirks. Features? Bugs? Play it and decide for yourself."
 	}
