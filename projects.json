@@ -22,6 +22,16 @@
 	},
 	{
 		"visible": "true",
+		"title": "Ez-Note",
+		"language": "Python",
+		"github": "https://github.com/christophertesar/wec_2024",
+		"site": "",
+		"photo": "img/ez-note.png",
+		"description":
+		"Ez-Note is a note storing app built around individuals with cognitive disabilities. Its primary features include speech-to-text transcription of recorded notes, image-to-text conversion of photos of text, AI text note summarization, and text-to-speech dictation of notes. Ez-Note provides a way for users to run all this processing on their input files, and store everything in a central location. This app was developed in 8 hours for the Western Engineering Competition 2024, where it won my team and I first place in the Programming Competition."
+	},
+	{
+		"visible": "true",
 		"title": "RescueReady",
 		"language": "Flutter",
 		"github": "https://github.com/amot-dev/RescueReady",
@@ -29,6 +39,26 @@
 		"photo": "img/rescue-ready.png",
 		"description":
 		"RescueReady is a Flutter application designed to assist in emergency situations. The app provides a platform for users to request help, offer assistance, and access information about local emergencies and emergency guides. This mainly serves as a means to reduce burden on the 911 lines during natural disasters or other emergencies. If you are simply trapped, and not in any imminent danger, a trained and vetted volunteer can be dispatched to your location, rather than having to burden official emergency response teams with your call."
+	},
+	{
+		"visible": "true",
+		"title": "Star Trek Episodes",
+		"language": "JS",
+		"github": "https://github.com/amot-dev/star-trek-episodes",
+		"site": "https://amot.dev/star-trek-episodes/",
+		"photo": "img/star-trek-episodes.png",
+		"description":
+		"This website was a personal project of mine intended to sort through all Star Trek episodes based on various character, planet, and ship appearances (and eventually mood/tone as well). At the moment, it is left as a proof of concept (with TOS and TAS done, and TNG partially done) due to the large amount of Star Trek episodes, though I am planning to eventually overhaul everything using ReactJS to be less manual. Currently, it's possible to select multiple tags to include or not include. These are searchable, or can simply be picked from a list of all tags appearing in the selected show."
+	},
+		{
+		"visible": "true",
+		"title": "2048",
+		"language": "JS",
+		"github": "https://github.com/amot-dev/2048",
+		"site": "https://amot.dev/2048/",
+		"photo": "img/2048.png",
+		"description":
+		"This is yet another implementation of 2048, back from when I was first learning JavaScript. It keeps track of current and high score, and generally works, but has some odd quirks. Features? Bugs? Play it and decide for yourself."
 	},
 	{
 		"visible": "true",
@@ -49,16 +79,6 @@
 		"photo": "",
 		"description":
 		"Vending Machine is a program intended to run on a physical vending machine FPGA. It provides all the necessary functions, including setting prices, purchasing products, and even a backdoor to receive products for free :). Without a physical vending machine, the input must be set prior to runtime and the output is in a form of a digital signal graph, but of course, when ran on a physical machine, inputs would be relayed from the PIN pad, and outputs would trigger mechanisms to process payment or release a product."
-	},
-	{
-		"visible": "true",
-		"title": "Star Trek Episodes",
-		"language": "JS",
-		"github": "https://github.com/amot-dev/star-trek-episodes",
-		"site": "https://amot.dev/star-trek-episodes/",
-		"photo": "img/star-trek-episodes.png",
-		"description":
-		"This website was a personal project of mine intended to sort through all Star Trek episodes based on various character, planet, and ship appearances (and eventually mood/tone as well). At the moment, it is left as a proof of concept (with TOS and TAS done, and TNG partially done) due to the large amount of Star Trek episodes, though I am planning to eventually overhaul everything using ReactJS to be less manual. Currently, it's possible to select multiple tags to include or not include. These are searchable, or can simply be picked from a list of all tags appearing in the selected show."
 	},
 	{
 		"visible": "false",
@@ -99,16 +119,6 @@
 		"photo": "",
 		"description":
 		"Cycle Vest was a project I, along with a few others made in my first engineering design course. Essentially, it's a jacket with lights for cycling. A palm-attached control panel allows the user to light up the arm they are using to signal, making it more visible to other vehicles. Additionally, more lights on the back of the jacket light up automatically in low-light conditions, triggered by a photoresistor."
-	},
-	{
-		"visible": "true",
-		"title": "2048",
-		"language": "JS",
-		"github": "https://github.com/amot-dev/2048",
-		"site": "https://amot.dev/2048/",
-		"photo": "img/2048.png",
-		"description":
-		"This is yet another implementation of 2048, back from when I was first learning JavaScript. It keeps track of current and high score, and generally works, but has some odd quirks. Features? Bugs? Play it and decide for yourself."
 	}
 ]
 }

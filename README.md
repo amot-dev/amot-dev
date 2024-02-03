@@ -1,2 +1,2 @@
 # amot.dev
-My personal website
+My personal website. Check it out [here](amot.dev)!
