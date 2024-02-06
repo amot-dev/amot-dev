@@ -6,7 +6,7 @@
 		"language": "Java",
 		"github": "https://github.com/amot-dev/endshards",
 		"site": "https://modrinth.com/mod/endshards",
-		"photo": "",
+		"photo": "img/projects/endshards.png",
 		"description":
 		"Endshards is a Minecraft Mod intended to overhaul the endgame progression with by upgrading the existing Netherite gear, and by adding 3 new sets of gear, a new dimension, and a new boss. Of course, this is all still in development, but the idea is to diversify some of the tools and armour with some special abilities, making different sets better for different tasks. For example, Ender gear is best suited for exploration, Netherite is best for combat, and Sculk is best for mining. The final Nightmare tier will be a jack of all trades, but master of none. This project was initially intended for me to learn Minecraft modding, but that turned out to be fairly simple so I expanded my goals. For more info, see the wiki on the github page!"
 	},
