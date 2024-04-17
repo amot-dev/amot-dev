@@ -76,7 +76,7 @@ nav {
 
 #buttons {
 	display: block;
-	vertical-align: top;
+	vertical-align: top; /* Needed, despite what your IDE may tell you */
 	background-color: #b5d854;
 	transition: 0.2s;
 }
