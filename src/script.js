@@ -157,7 +157,7 @@ function Project(props) {
 					<img className="featured-image" src={props.photo}></img>
 				}
 				
-				<p className="desc">{props.desc}</p>
+				<p className="desc" dangerouslySetInnerHTML={{ __html: props.desc.replace(/\\n/g, '<br />') }}></p>
 				{props.site == ""
 					? <a className="site button" href={props.github} target="_blank">See it on GitHub</a>
 					: <div>

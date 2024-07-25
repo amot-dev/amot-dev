@@ -8,7 +8,7 @@
 		"site": "https://modrinth.com/mod/endshards",
 		"photo": "img/projects/endshards.png",
 		"description":
-		"Endshards is a Minecraft Mod intended to overhaul the endgame progression with by upgrading the existing Netherite gear, and by adding 3 new sets of gear, a new dimension, and a new boss. Of course, this is all still in development, but the idea is to diversify some of the tools and armour with some special abilities, making different sets better for different tasks. For example, Ender gear is best suited for exploration, Netherite is best for combat, and Sculk is best for mining. The final Nightmare tier will be a jack of all trades, but master of none. This project was initially intended for me to learn Minecraft modding, but that turned out to be fairly simple so I expanded my goals. For more info, see the wiki on the github page!"
+		"Endshards is a Minecraft Mod intended to overhaul the endgame progression with by upgrading the existing Netherite gear, and by adding 3 new sets of gear, a new dimension, and a new boss. Of course, this is all still in development, but the idea is to diversify some of the tools and armour with some special abilities, making different sets better for different tasks.\\n\\nFor example, Ender gear is best suited for exploration, Netherite is best for combat, and Sculk is best for mining. The final Nightmare tier will be a jack of all trades, but master of none. This project was initially intended for me to learn Minecraft modding, but that turned out to be fairly simple so I expanded my goals. For more info, see the wiki on the github page!"
 	},
 	{
 		"visible": "true",
@@ -18,7 +18,7 @@
 		"site": "https://modrinth.com/mod/cursed-table-revamped",
 		"photo": "img/projects/cursed-table-revamped.png",
 		"description":
-		"Cursed Table Revamped is another Minecraft Mod, though quite a bit smaller than Endshards. In the unmodified game, treasure and curse enchantments do not appear in the Enchanting Table at all. With Cursed Table Revamped, by default, curses are added to the list of possible enchants. For me, that wasn't quite enough though, so I added a few custom game rules that allow the player to pick and choose exactly which enchants can appear."
+		"Cursed Table Revamped is another Minecraft Mod, though quite a bit smaller than Endshards. In the unmodified game, treasure and curse enchantments do not appear in the Enchanting Table at all.\\n\\nWith Cursed Table Revamped, by default, curses are added to the list of possible enchants. For me, that wasn't quite enough though, so I added a few custom game rules that allow the player to pick and choose exactly which enchants can appear."
 	},
 	{
 		"visible": "true",
@@ -28,17 +28,17 @@
 		"site": "",
 		"photo": "img/projects/ez-note.png",
 		"description":
-		"Ez-Note is a note storing app built around individuals with cognitive disabilities. Its primary features include speech-to-text transcription of recorded notes, image-to-text conversion of photos of text, AI text note summarization, and text-to-speech dictation of notes. Ez-Note provides a way for users to run all this processing on their input files, and store everything in a central location. This app was developed in 8 hours for the Western Engineering Competition 2024, where it won my team and I first place in the Programming Competition."
+		"Ez-Note is a note storing app built around individuals with cognitive disabilities. Its primary features include speech-to-text transcription of recorded notes, image-to-text conversion of photos of text, AI text note summarization, and text-to-speech dictation of notes.\\n\\nEz-Note provides a way for users to run all this processing on their input files, and store everything in a central location. This app was developed in 8 hours for the Western Engineering Competition 2024, where it won my team and I first place in the Programming Competition."
 	},
 	{
-		"visible": "true",
+		"visible": "false",
 		"title": "RescueReady",
 		"language": "Flutter",
 		"github": "https://github.com/amot-dev/RescueReady",
 		"site": "",
 		"photo": "img/projects/rescue-ready.png",
 		"description":
-		"RescueReady is a Flutter application designed to assist in emergency situations. The app provides a platform for users to request help, offer assistance, and access information about local emergencies and emergency guides. This mainly serves as a means to reduce burden on the 911 lines during natural disasters or other emergencies. If you are simply trapped, and not in any imminent danger, a trained and vetted volunteer can be dispatched to your location, rather than having to burden official emergency response teams with your call."
+		"RescueReady is a Flutter application designed to assist in emergency situations. The app provides a platform for users to request help, offer assistance, and access information about local emergencies and emergency guides.\\n\\nThis mainly serves as a means to reduce burden on the 911 lines during natural disasters or other emergencies. If you are simply trapped, and not in any imminent danger, a trained and vetted volunteer can be dispatched to your location, rather than having to burden official emergency response teams with your call."
 	},
 	{
 		"visible": "true",
@@ -48,7 +48,7 @@
 		"site": "https://amot.dev/star-trek-episodes/",
 		"photo": "img/projects/star-trek-episodes.png",
 		"description":
-		"This website was a personal project of mine intended to sort through all Star Trek episodes based on various character, planet, and ship appearances (and eventually mood/tone as well). At the moment, it is left as a proof of concept (with TOS and TAS done, and TNG partially done) due to the large amount of Star Trek episodes, though I am planning to eventually overhaul everything using ReactJS to be less manual. Currently, it's possible to select multiple tags to include or not include. These are searchable, or can simply be picked from a list of all tags appearing in the selected show."
+		"This website was a personal project of mine intended to sort through all Star Trek episodes based on various character, planet, and ship appearances (and eventually mood/tone as well). Currently, it's possible to select multiple tags to include or not include. These are searchable, or can simply be picked from a list of all tags appearing in the selected show.\\n\\nAt the moment, it is left as a proof of concept (with TOS and TAS done, and TNG partially done) due to the large amount of Star Trek episodes, though I am planning to eventually overhaul everything using ReactJS to be less manual."
 	},
 		{
 		"visible": "true",
@@ -78,7 +78,7 @@
 		"site": "",
 		"photo": "",
 		"description":
-		"Vending Machine is a program intended to run on a physical vending machine FPGA. It provides all the necessary functions, including setting prices, purchasing products, and even a backdoor to receive products for free :). Without a physical vending machine, the input must be set prior to runtime and the output is in a form of a digital signal graph, but of course, when ran on a physical machine, inputs would be relayed from the PIN pad, and outputs would trigger mechanisms to process payment or release a product."
+		"Vending Machine is a program intended to run on a physical vending machine FPGA. It provides all the necessary functions, including setting prices, purchasing products, and even a backdoor to receive products for free :).\\n\\nWithout a physical vending machine, the input must be set prior to runtime and the output is in a form of a digital signal graph, but of course, when ran on a physical machine, inputs would be relayed from the PIN pad, and outputs would trigger mechanisms to process payment or release a product."
 	},
 	{
 		"visible": "false",

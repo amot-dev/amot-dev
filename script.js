@@ -181,11 +181,7 @@ function Project(props) {
 				)
 			),
 			props.photo != "" && React.createElement('img', { className: 'featured-image', src: props.photo }),
-			React.createElement(
-				'p',
-				{ className: 'desc' },
-				props.desc
-			),
+			React.createElement('p', { className: 'desc', dangerouslySetInnerHTML: { __html: props.desc.replace(/\\n/g, '<br />') } }),
 			props.site == "" ? React.createElement(
 				'a',
 				{ className: 'site button', href: props.github, target: '_blank' },
