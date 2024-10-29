@@ -12,6 +12,16 @@
 	},
 	{
 		"visible": "true",
+		"title": "timestamp",
+		"language": "C++",
+		"github": "https://github.com/amot-dev/timestamp",
+		"site": "https://aur.archlinux.org/packages/timestamp",
+		"photo": "img/projects/timestamp.png",
+		"description":
+		"For the longest time, my way to organize photos was a mostly unreliable bash script that would often result in lost files if date metadata, especially on videos, was missing. This new and improved timestamp tool was developed to fix all reliability issues, improve speed, and add some customizability. In short, I wanted to make something that would be useful for others too.\\n\\nThe new and improved timestamp tool allows you to rename EXIF and XMP files to reflect date found in metadata. The specific tag used to extract data from the file can be changed, as can the final date format used in the file rename. And, to make it easier for others to discover, I've published it to the Arch Linux AUR!"
+	},
+	{
+		"visible": "true",
 		"title": "Cursed Table Revamped",
 		"language": "Java",
 		"github": "https://github.com/amot-dev/cursed-table-revamped",
