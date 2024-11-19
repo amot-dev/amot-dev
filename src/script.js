@@ -137,13 +137,26 @@ function setTextColor(language) {
 
 // Define React Component
 function Project(props) {
-	// Run after initial load
-	React.useEffect(() => {
+	// Ref to track the total number of images to be loaded
+	const totalImagesRef = React.useRef(0);
+	// Ref to track the count of loaded images
+	const loadedImagesRef = React.useRef(0);
+  
+	// Increment the loaded image count and check if all images are loaded
+	const handleImageLoad = () => {
+	  loadedImagesRef.current += 1;
+
+	  // Call setEqualHeight once all images are loaded
+	  if (loadedImagesRef.current === totalImagesRef.current) {
 		setEqualHeight();
-	});
+	  }
+	};
 	
 	// Skip rendering elements not set to visible and elements with an empty description
 	if (props.visible == "false" || props.desc == "") return null;
+
+	// Increment total image count if there's an image
+	if (props.photo !== "") totalImagesRef.current += 1;
 	
 	// Template for cards
 	return (
@@ -154,7 +167,7 @@ function Project(props) {
 					<h3 className="language" style={setTextColor(props.lang)}>{props.lang}</h3>
 				</div>
 				{props.photo != "" &&
-					<img className="featured-image" src={props.photo}></img>
+					<img className="featured-image" src={props.photo} onLoad={handleImageLoad}></img>
 				}
 				
 				<p className="desc" dangerouslySetInnerHTML={{ __html: props.desc.replace(/\\n/g, '<br />') }}></p>
