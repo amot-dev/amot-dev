@@ -5,10 +5,10 @@
 		"title": "Endshards",
 		"language": "Java",
 		"github": "https://github.com/amot-dev/endshards",
-		"site": "https://modrinth.com/mod/endshards",
+		"site": "/endshards",
 		"photo": "img/projects/endshards.png",
 		"description":
-		"Endshards is a Minecraft Mod intended to overhaul the endgame progression with by upgrading the existing Netherite gear, and by adding 3 new sets of gear, a new dimension, and a new boss. Of course, this is all still in development, but the idea is to diversify some of the tools and armour with some special abilities, making different sets better for different tasks.\\n\\nFor example, Ender gear is best suited for exploration, Netherite is best for combat, and Sculk is best for mining. The final Nightmare tier will be a jack of all trades, but master of none. This project was initially intended for me to learn Minecraft modding, but that turned out to be fairly simple so I expanded my goals. For more info, see the wiki on the github page!"
+		"Endshards is a Minecraft Mod intended to overhaul the endgame progression with by upgrading the existing Netherite gear, and by adding 3 new sets of gear, a new dimension, and a new boss. Of course, this is all still in development, but the idea is to diversify some of the tools and armour with some special abilities, making different sets better for different tasks.\\n\\nFor example, Ender gear is best suited for exploration, Netherite is best for combat, and Sculk is best for mining. The final Nightmare tier will be a jack of all trades, but master of none. This project was initially intended for me to learn Minecraft modding, but that turned out to be fairly simple so I expanded my goals. For more info and a download link, see the wiki linked below!"
 	},
 	{
 		"visible": "true",
@@ -55,7 +55,7 @@
 		"title": "Star Trek Episodes",
 		"language": "JS",
 		"github": "https://github.com/amot-dev/star-trek-episodes",
-		"site": "https://amot.dev/star-trek-episodes/",
+		"site": "/star-trek-episodes",
 		"photo": "img/projects/star-trek-episodes.png",
 		"description":
 		"This website was a personal project of mine intended to sort through all Star Trek episodes based on various character, planet, and ship appearances (and eventually mood/tone as well). Currently, it's possible to select multiple tags to include or not include. These are searchable, or can simply be picked from a list of all tags appearing in the selected show.\\n\\nAt the moment, it is left as a proof of concept (with TOS and TAS done, and TNG partially done) due to the large amount of Star Trek episodes, though I am planning to eventually overhaul everything using ReactJS to be less manual."
@@ -65,7 +65,7 @@
 		"title": "2048",
 		"language": "JS",
 		"github": "https://github.com/amot-dev/2048",
-		"site": "https://amot.dev/2048/",
+		"site": "/2048",
 		"photo": "img/projects/2048.png",
 		"description":
 		"This is yet another implementation of 2048, back from when I was first learning JavaScript. It keeps track of current and high score, and generally works, but has some odd quirks. Features? Bugs? Play it and decide for yourself."
